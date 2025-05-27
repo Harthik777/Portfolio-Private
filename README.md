@@ -214,7 +214,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Harthik M V**
 
-- Portfolio: [harthikmv.com](https://harthikmv.com)
 - LinkedIn: [linkedin.com/in/harthik-mv](https://linkedin.com/in/harthik-mv)
 - Email: harthik7777@gmail.com
 
