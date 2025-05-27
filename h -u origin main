@@ -1,0 +1,5 @@
+[33mfbd18aa[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m feat: Enhanced portfolio website with performance optimizations and responsive design
+[33m52e5274[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m fix: move glassmorphism background to layout and ensure full-page coverage
+[33madd40dc[m feat: implement best-in-class glassmorphism animated background for home page
+[33mac1b6dc[m feat: Update college name and optimize homepage for light theme - Update college name to 'Manipal Institute of Technology (MIT) Bengaluru' - Add comprehensive light theme support for all homepage sections - Optimize 'What I Do' section with proper light/dark theme styling - Add light theme card backgrounds, borders, and text colors - Improve tech badge styling for both themes - Maintain performance optimizations from previous updates
+[33m3db51d0[m  Ultra Performance: Homepage bundle reduced from 4.99kB to 2.6kB - 48% smaller, lightning fast
