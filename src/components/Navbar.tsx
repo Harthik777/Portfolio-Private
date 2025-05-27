@@ -52,8 +52,15 @@ export function Navbar() {
 
   const closeMobileMenu = useCallback(() => {
     setMobileMenuOpen(false);
+<<<<<<< HEAD
   }, []);  return (
     <>      <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-200/50 shadow-lg transition-all duration-200 bg-white dark:bg-gray-900 dark:border-gray-700/50">
+=======
+  }, []);
+
+  return (
+    <>      <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-900">
+>>>>>>> 0fb7d430352bf3ed91402d5096d4766ccba38a69
         <nav
           className="mx-auto flex max-w-7xl items-center justify-between px-4 xs:px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 py-3 xs:py-4 sm:py-5"
           aria-label="Global navigation"
@@ -124,6 +131,7 @@ export function Navbar() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
+<<<<<<< HEAD
               transition={{ duration: 0.15 }}
               className="fixed inset-0 z-40 bg-black/50 lg:hidden"
               onClick={closeMobileMenu}
@@ -134,6 +142,19 @@ export function Navbar() {
               exit={{ opacity: 0, x: '100%' }}
               transition={{ duration: 0.2, ease: 'easeInOut' }}
               className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-4 xs:px-6 py-4 xs:py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:sm:ring-gray-700/50 lg:hidden border-l border-gray-200/50 dark:border-gray-700/50 bg-white dark:bg-gray-900"
+=======
+              className="fixed inset-0 z-40 bg-black/50 lg:hidden"
+              onClick={closeMobileMenu}
+              aria-hidden="true"
+            />            {/* Menu panel */}
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              variants={mobileMenuVariants}
+              transition={{ duration: 0.2 }}
+              className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-4 xs:px-6 py-4 xs:py-6 dark:bg-gray-900 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:sm:ring-gray-700/50 lg:hidden border-l border-gray-200 dark:border-gray-700"
+>>>>>>> 0fb7d430352bf3ed91402d5096d4766ccba38a69
             >
               <div className="flex items-center justify-between mb-6">
                 <Link
