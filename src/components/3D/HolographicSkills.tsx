@@ -13,12 +13,12 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: 'Machine Learning', level: 95, category: 'AI/ML', color: '#8b5cf6', icon: '🤖' },
-  { name: 'Deep Learning', level: 90, category: 'AI/ML', color: '#ec4899', icon: '🧠' },
+  { name: 'Machine Learning', level: 95, category: 'AI/ML', color: '#6366f1', icon: '🤖' },
+  { name: 'Deep Learning', level: 90, category: 'AI/ML', color: '#8b5cf6', icon: '🧠' },
   { name: 'Python', level: 95, category: 'Programming', color: '#3b82f6', icon: '🐍' },
   { name: 'TensorFlow', level: 88, category: 'Framework', color: '#10b981', icon: '⚡' },
   { name: 'PyTorch', level: 85, category: 'Framework', color: '#f59e0b', icon: '🔥' },
-  { name: 'Data Science', level: 92, category: 'Analytics', color: '#ef4444', icon: '📊' },
+  { name: 'Data Science', level: 92, category: 'Analytics', color: '#7c3aed', icon: '📊' },
   { name: 'React/Next.js', level: 90, category: 'Web Dev', color: '#06b6d4', icon: '⚛️' },
   { name: 'TypeScript', level: 88, category: 'Programming', color: '#8b5cf6', icon: '📝' },
 ];

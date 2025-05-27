@@ -67,16 +67,15 @@ export function FuturisticLoader() {
       }
     };
   }, []);
-
   useEffect(() => {
-    // Faster loading on mobile for better UX
-    const baseTime = isMobile ? 2000 : 3000;
-    // Reduce loading time even further for low-end devices
-    const duration = isLowEndDevice ? baseTime * 0.6 : baseTime;
-    // Fewer steps for smoother progress on low-end devices
+    // Much faster loading for better performance
+    const baseTime = isMobile ? 1000 : 1500; // Significantly reduced
+    // Even faster for low-end devices
+    const duration = isLowEndDevice ? baseTime * 0.4 : baseTime * 0.6;
+    // Fewer steps for smoother performance
     const steps = isMobile 
-      ? isLowEndDevice ? 30 : 40 
-      : 60;
+      ? isLowEndDevice ? 15 : 20 
+      : 25;
     const increment = 100 / steps;
     
     let currentStep = 0;
@@ -86,7 +85,7 @@ export function FuturisticLoader() {
       
       if (currentStep >= steps) {
         clearInterval(interval);
-        setTimeout(() => setIsLoading(false), 500);
+        setTimeout(() => setIsLoading(false), 200);
       }
     }, duration / steps);
     

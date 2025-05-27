@@ -28,8 +28,7 @@ export function CustomCursor() {
   const trailIdRef = useRef(0);
   const throttleRef = useRef<number>(0);
   const fps = isLowPerformance ? 30 : 60; // Lower FPS for low-performance devices
-  const throttleMs = 1000 / fps;
-  // Detect mobile devices and performance capabilities
+  const throttleMs = 1000 / fps;  // Detect mobile devices and performance capabilities
   useEffect(() => {
     const checkDeviceCapabilities = () => {
       // Only run on client side
@@ -40,12 +39,13 @@ export function CustomCursor() {
         || window.innerWidth < 768 
         || ('ontouchstart' in window);
       setIsMobile(isMobileDevice);
-        // Check for low performance device
-      const isLowEnd = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4;
+        // Check for low performance device - be more aggressive
+      const isLowEnd = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 6;
       const isOlderBrowser = !window.requestAnimationFrame || !window.IntersectionObserver;
-      const isLowRAM = 'deviceMemory' in navigator && (navigator as any).deviceMemory < 4;
+      const isLowRAM = 'deviceMemory' in navigator && (navigator as any).deviceMemory < 8;
+      const isSmallScreen = window.innerWidth < 1200;
       
-      setIsLowPerformance(isLowEnd || isOlderBrowser || isLowRAM || window.innerWidth < 1024);
+      setIsLowPerformance(isLowEnd || isOlderBrowser || isLowRAM || isSmallScreen);
     };
 
     checkDeviceCapabilities();
@@ -59,6 +59,11 @@ export function CustomCursor() {
       }
     };
   }, []);
+
+  // Early return for mobile or low performance devices - don't render cursor at all
+  if (isMobile || isLowPerformance) {
+    return null;
+  }
 
   useEffect(() => {
     // Don't render custom cursor on mobile devices

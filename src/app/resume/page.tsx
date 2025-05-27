@@ -135,24 +135,23 @@ export default function Resume() {
                           <li>Architecting and implementing a novel self-refinement loop using Langchain and lightweight LLMs (Ollama/Gemini API) to enhance clarity and accessibility of XAI summaries</li>
                           <li>Driving development of high-performance fraud detection models (LightGBM/XGBoost) on IEEE-CIS dataset, conducting deep XAI analysis with SHAP, and spearheading research paper publication</li>
                           <li>Engineering prompts and orchestrating LLM workflows for automated generation, critique, and refinement of natural language explanations from complex SHAP data</li>
-                        </ul>
-                        <div className="mt-3 flex flex-wrap gap-2">
-                          <span className="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800 dark:bg-blue-900/50 dark:text-blue-200">
+                        </ul>                        <div className="mt-3 flex flex-wrap gap-2">
+                          <span className="inline-flex items-center rounded-full border border-indigo-300/30 bg-gradient-to-r from-indigo-50 to-purple-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700 shadow-sm backdrop-blur-sm transition-all hover:scale-105 hover:shadow-md hover:from-indigo-100 hover:to-purple-100 dark:border-indigo-400/20 dark:from-indigo-900/40 dark:to-purple-900/40 dark:text-indigo-300 dark:hover:from-indigo-900/60 dark:hover:to-purple-900/60">
                             Python
                           </span>
-                          <span className="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900/50 dark:text-green-200">
+                          <span className="inline-flex items-center rounded-full border border-indigo-300/30 bg-gradient-to-r from-indigo-50 to-purple-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700 shadow-sm backdrop-blur-sm transition-all hover:scale-105 hover:shadow-md hover:from-indigo-100 hover:to-purple-100 dark:border-indigo-400/20 dark:from-indigo-900/40 dark:to-purple-900/40 dark:text-indigo-300 dark:hover:from-indigo-900/60 dark:hover:to-purple-900/60">
                             LightGBM/XGBoost
                           </span>
-                          <span className="inline-flex items-center rounded-full bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:bg-purple-900/50 dark:text-purple-200">
+                          <span className="inline-flex items-center rounded-full border border-indigo-300/30 bg-gradient-to-r from-indigo-50 to-purple-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700 shadow-sm backdrop-blur-sm transition-all hover:scale-105 hover:shadow-md hover:from-indigo-100 hover:to-purple-100 dark:border-indigo-400/20 dark:from-indigo-900/40 dark:to-purple-900/40 dark:text-indigo-300 dark:hover:from-indigo-900/60 dark:hover:to-purple-900/60">
                             SHAP/XAI
                           </span>
-                          <span className="inline-flex items-center rounded-full bg-pink-100 px-2.5 py-0.5 text-xs font-medium text-pink-800 dark:bg-pink-900/50 dark:text-pink-200">
+                          <span className="inline-flex items-center rounded-full border border-indigo-300/30 bg-gradient-to-r from-indigo-50 to-purple-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700 shadow-sm backdrop-blur-sm transition-all hover:scale-105 hover:shadow-md hover:from-indigo-100 hover:to-purple-100 dark:border-indigo-400/20 dark:from-indigo-900/40 dark:to-purple-900/40 dark:text-indigo-300 dark:hover:from-indigo-900/60 dark:hover:to-purple-900/60">
                             Langchain
                           </span>
-                          <span className="inline-flex items-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800 dark:bg-yellow-900/50 dark:text-yellow-200">
+                          <span className="inline-flex items-center rounded-full border border-indigo-300/30 bg-gradient-to-r from-indigo-50 to-purple-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700 shadow-sm backdrop-blur-sm transition-all hover:scale-105 hover:shadow-md hover:from-indigo-100 hover:to-purple-100 dark:border-indigo-400/20 dark:from-indigo-900/40 dark:to-purple-900/40 dark:text-indigo-300 dark:hover:from-indigo-900/60 dark:hover:to-purple-900/60">
                             Ollama/Gemini API
                           </span>
-                          <span className="inline-flex items-center rounded-full bg-indigo-100 px-2.5 py-0.5 text-xs font-medium text-indigo-800 dark:bg-indigo-900/50 dark:text-indigo-200">
+                          <span className="inline-flex items-center rounded-full border border-indigo-300/30 bg-gradient-to-r from-indigo-50 to-purple-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700 shadow-sm backdrop-blur-sm transition-all hover:scale-105 hover:shadow-md hover:from-indigo-100 hover:to-purple-100 dark:border-indigo-400/20 dark:from-indigo-900/40 dark:to-purple-900/40 dark:text-indigo-300 dark:hover:from-indigo-900/60 dark:hover:to-purple-900/60">
                             Research Leadership
                           </span>
                         </div>

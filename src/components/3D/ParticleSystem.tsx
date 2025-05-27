@@ -13,20 +13,20 @@ export function ParticleSystem({ className = '' }: ParticleSystemProps) {
   const sceneRef = useRef<THREE.Scene>();
   const rendererRef = useRef<THREE.WebGLRenderer>();
   const animationIdRef = useRef<number>();
-  const { theme, resolvedTheme } = useTheme();const particleSystem = useMemo(() => {
-    // Responsive particle count based on device capabilities
+  const { theme, resolvedTheme } = useTheme();  const particleSystem = useMemo(() => {
+    // Aggressive particle count reduction for better performance
     const getParticleCount = () => {
-      if (typeof window === 'undefined') return 1000;
+      if (typeof window === 'undefined') return 500;
       
       const isMobile = window.innerWidth < 768;
       const isTablet = window.innerWidth >= 768 && window.innerWidth < 1024;
       const isLowEndDevice = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4;
       
-      // Further reduce particles for extremely low-end devices
-      if (isLowEndDevice && isMobile) return 300;
-      if (isMobile) return 500; // Reduced for mobile
-      if (isTablet) return 1000; // Medium for tablet
-      return 1800; // Slightly reduced for desktop to improve performance
+      // Much more aggressive reduction for performance
+      if (isLowEndDevice && isMobile) return 150;
+      if (isMobile) return 250; // Further reduced for mobile
+      if (isTablet) return 400;  // Further reduced for tablet
+      return 800; // Significantly reduced for desktop
     };
 
     const particleCount = getParticleCount();
@@ -43,10 +43,10 @@ export function ParticleSystem({ className = '' }: ParticleSystemProps) {
       positions[i3 + 1] = (Math.random() - 0.5) * 2000;
       positions[i3 + 2] = (Math.random() - 0.5) * 2000;
 
-      // Velocity
-      velocities[i3] = (Math.random() - 0.5) * 0.5;
-      velocities[i3 + 1] = (Math.random() - 0.5) * 0.5;
-      velocities[i3 + 2] = (Math.random() - 0.5) * 0.5;
+      // Velocity - reduced for smoother performance
+      velocities[i3] = (Math.random() - 0.5) * 0.3;
+      velocities[i3 + 1] = (Math.random() - 0.5) * 0.3;
+      velocities[i3 + 2] = (Math.random() - 0.5) * 0.3;
 
       // Colors - AI/Tech inspired palette
       const colorVariant = Math.random();

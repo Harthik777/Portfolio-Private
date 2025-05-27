@@ -3,11 +3,11 @@
 
 // Configuration to reduce bundle size
 export const performanceConfig = {
-  // Reduce particle count on all devices for better performance
+  // Reduced particle count for better performance across all devices
   particleCount: {
-    mobile: 300,
-    tablet: 800,
-    desktop: 1500
+    mobile: 150,    // Reduced from 300
+    tablet: 400,    // Reduced from 800
+    desktop: 800    // Reduced from 1500
   },
   
   // Frame rate control
@@ -19,8 +19,15 @@ export const performanceConfig = {
   
   // Loading optimizations
   loading: {
-    mobileTimeReduce: 0.4, // 40% faster loading on mobile
-    mobileStepsReduce: 0.25 // 25% fewer loading steps on mobile
+    mobileTimeReduce: 0.6, // 60% faster loading on mobile
+    mobileStepsReduce: 0.5 // 50% fewer loading steps on mobile
+  },
+  
+  // Animation performance settings
+  animations: {
+    reducedMotion: true,      // Enable reduced motion by default
+    fastTransitions: true,    // Use faster transition durations
+    skipComplexAnimations: true // Skip complex animations on lower-end devices
   }
 };
 

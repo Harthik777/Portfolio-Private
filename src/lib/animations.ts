@@ -1,51 +1,51 @@
 /**
- * Common animation variants for reuse across components
+ * Optimized animation variants for better performance
  */
 
-// Fade up animation
+// Fast fade up animation
 export const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
+  initial: { opacity: 0, y: 30 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: 'easeOut' },
+  transition: { duration: 0.3, ease: 'easeOut' },
 };
 
-// Fade in animation
+// Fast fade in animation
 export const fadeIn = {
   initial: { opacity: 0 },
   animate: { opacity: 1 },
-  transition: { duration: 0.5, ease: 'easeInOut' },
+  transition: { duration: 0.25, ease: 'easeInOut' },
 };
 
-// Scale animation
+// Fast scale animation
 export const scaleIn = {
-  initial: { opacity: 0, scale: 0.8 },
+  initial: { opacity: 0, scale: 0.9 },
   animate: { opacity: 1, scale: 1 },
-  transition: { duration: 0.5, ease: 'easeOut' },
+  transition: { duration: 0.25, ease: 'easeOut' },
 };
 
-// Stagger container
+// Reduced stagger for performance
 export const staggerContainer = {
   animate: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.05,
     },
   },
 };
 
-// Nav item animations
+// Simplified nav item animations
 export const navVariants = {
-  hidden: { opacity: 0, y: -20 },
+  hidden: { opacity: 0, y: -10 },
   visible: { opacity: 1, y: 0 },
 };
 
-// Mobile menu animations
+// Simplified mobile menu animations
 export const mobileMenuVariants = {
-  hidden: { opacity: 0, scale: 0.95 },
+  hidden: { opacity: 0, scale: 0.98 },
   visible: { opacity: 1, scale: 1 },
-  exit: { opacity: 0, scale: 0.95 },
+  exit: { opacity: 0, scale: 0.98 },
 };
 
-// Page transitions
+// Fast page transitions
 export const pageTransition = {
   initial: { opacity: 0 },
   animate: { opacity: 1 },

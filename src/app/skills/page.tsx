@@ -149,10 +149,9 @@ export default function Skills() {
                     <div className="space-y-3">
                       <div className={`rounded-lg bg-gradient-to-r ${skillData.bgGradient} p-4`}>
                         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-                          {skillData.items.map(skill => (
-                            <span
+                          {skillData.items.map(skill => (                            <span
                               key={skill}
-                              className="inline-flex items-center rounded-full border border-indigo-200 bg-white/90 px-3 py-2 text-sm font-semibold text-indigo-700 shadow backdrop-blur-sm transition-all hover:scale-105 hover:shadow-lg dark:border-indigo-700 dark:bg-gray-800/90 dark:text-indigo-300"
+                              className="inline-flex items-center rounded-full border border-indigo-300/30 bg-gradient-to-r from-indigo-50 to-purple-50 px-3 py-2 text-sm font-semibold text-indigo-700 shadow-lg backdrop-blur-sm transition-all hover:scale-105 hover:shadow-xl hover:from-indigo-100 hover:to-purple-100 dark:border-indigo-400/20 dark:from-indigo-900/40 dark:to-purple-900/40 dark:text-indigo-300 dark:hover:from-indigo-900/60 dark:hover:to-purple-900/60"
                             >
                               {skill}
                             </span>
